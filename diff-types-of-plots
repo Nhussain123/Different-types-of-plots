@@ -1,0 +1,19 @@
+Scatterplot shows where each datapoint sits
+Great for unordered points
+
+plt.scatter(df.age, df.height)
+
+plt.xlabel('Age (in months)')
+plt.ylabel('Height (in inches)')
+
+plt.show()
+
+Keyword arguments
+plt.scatter(df.age, df.height,
+            color='green',
+             marker='s')
+             
+Use alpha to change marker transparency (use when too difficult with large numbers of points)
+plt.scatter(df.x_data,
+            df.y_data
+            alpha=0.1)
